@@ -1,0 +1,105 @@
+#parse("./header.html") #parse("./leftmenu.html")
+
+
+ <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+    <section class="content-header">
+      <h1 style="display: inline;">
+        填写购买订单<small>作品查询</small>
+      </h1>
+    </section>
+	<!--角色申请管理-->
+		<section class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+					<div class="box">
+						<div class="box-header with-border">
+							<h3 class="box-title" style="margin-top: 1%;margin-bottom: 1%;">填写订单</h3>
+						</div>
+						<form class="form-horizontal">
+							<div class="box-body">
+								<!--作品编号-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品编号：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksIdInput" id="worksIdInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksNameInput" id="worksNameInput" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品单价（单月）-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品单价：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksSingleFeeInput" id="worksSingleFeeInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--期限-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">购买时间：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksTimeInput" id="worksTimeInput" placeholder="月"  style="border-radius: 5px;" >
+                 					</div>
+								</div>
+								<!--作品价格-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">购买价格：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksFeeInput" id="worksFeeInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品格式-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品格式：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksFormatInput" id="worksFormatInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品类型-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品类型：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksCateInput" id="worksCateInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品摘要-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品摘要：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksMemoInput" id="worksMemoInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<div class="btn btn-danger col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-2">返回</div>
+								<div type="submit" class="btn btn-primary col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2" id="orderSubmitBtn">提交</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	
+	
+
+
+    
+    <!-- /.content -->
+  </div>
+
+
+
+
+
+
+
+#parse("./footer.html")
+
+<script src="/drp/js/orderFillingOfBuy.js"></script>
+
+

@@ -1,0 +1,17 @@
+.content-wrapper{
+    background: url(/drp/dist/img/bg02.jpg);
+    background-size: 100%;
+    color: #333;
+}
+.pngSytle{
+	margin-top: 15%;
+}
+.topHeader{
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255,255,255,50%);
+}
+.btnSelfColor{
+	background-color: #4e66ac;
+	color: white;
+}

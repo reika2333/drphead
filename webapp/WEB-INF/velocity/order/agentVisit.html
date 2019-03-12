@@ -1,0 +1,49 @@
+#parse("./header.html") #parse("./leftmenu.html")
+<!--
+	邀请代理页面，加载代理商列表
+ -->
+ 
+<style>
+	table.dataTable.no-footer {
+    		border-bottom: none;
+	}
+	table.dataTable thead th{
+		border-bottom: none;
+	}
+</style>
+ 
+ <div class="content-wrapper" style="color: #555;background: url(/drp/dist/img/bg02.jpg); background-size: 100%;repeat：none;">
+    <section class="content-header">
+      <h1 style="display: inline;">
+        《xxx》邀请代理<small>我的作品代理</small>
+      </h1>
+    </section>
+	<section class="content">
+            <div class="row">
+            		<div class="col-sm-12">
+            			<div class="box">
+            				<div class="box-header" style="border-bottom:solid thin #eee">
+            					<h3 class="box-title">代理商列表</h3>
+            				</div>
+            				<div class="box-body table-responsive" style="padding-top:0;">
+            					<table class="table table-hover" id="listAgent">
+            					</table>
+            				</div>
+            			</div>
+            		</div>
+            </div>
+    </section>	
+	
+
+
+    
+    <!-- /.content -->
+  </div>
+
+
+
+
+
+#parse("./footer.html")
+
+<script src="/drp/js/agentVisit.js"></script>

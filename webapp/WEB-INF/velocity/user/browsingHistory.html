@@ -1,0 +1,60 @@
+#parse("./header.html") #parse("./leftmenu.html")
+<style>
+	table.dataTable.no-footer {
+    		border-bottom: none;
+	}
+	table.dataTable thead th{
+		border-bottom: none;
+	}
+</style>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+	<!-- Content Header (Page header) -->
+	<section class="content-header">
+		<h1>我的足迹</h1>
+		<ol class="breadcrumb">
+			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+			<li><a href="#">Tables</a></li>
+			<li class="active">Data tables</li>
+		</ol>
+	</section>
+	<!-- Main content -->
+	<section class="content">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="box">
+					<!-- /.box-header -->
+					<div class="box-header">
+						<div class="form-horizontal">
+							<div style="padding-top: 10px;" class="col-sm-offset-10">
+								<select class="form-control col-sm-2 "
+									onchange="selectOnchang(this)"
+									style="border-radius: 10px; width: 100px; margin-left: 60px;">
+									<option>一 天</option>
+									<option>一 周</option>
+									<option>一 个 月</option>
+									<option>半 年</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="box-body table-responsive" style="border-top: thin solid #ccc;">
+						<table id="borwsingExample" class="table table-hover"
+							cellpadding="0" align="center" cellspacing="0" border="0">
+						</table>
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<!-- /.box -->
+			</div>
+			<!-- /.col -->
+		</div>
+		<!-- /.row -->
+	</section>
+	<!-- /.content -->
+</div>
+
+
+#parse("./footer.html")
+<script src="/drp/js/browsingHistory.js"></script>

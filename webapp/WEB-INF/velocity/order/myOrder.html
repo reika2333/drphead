@@ -1,0 +1,54 @@
+#parse("./header.html") #parse("./leftmenu.html")
+
+<style>
+	table.dataTable.no-footer {
+    		border-bottom: none;
+	}
+	table.dataTable thead th{
+		border-bottom: none;
+	}
+</style>
+
+
+<div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+	<section class="content-header">
+		<h1>
+			我的订单 <small>普通用户</small>
+		</h1>
+		<ol class="breadcrumb">
+			<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+			<li><a href="#">Tables</a></li>
+			<li class="active">Data tables</li>
+		</ol>
+	</section>
+	<section class="content">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="box">
+					<div class="box-header" style="border-bottom:solid thin #eee;">
+						<h3 style="margin-top: 5px;display:inline;margin-top:1%">我的订单</h3>
+						<form action="#" method="get" class="col-sm-3 pull-right">
+								<div class="input-group">
+									<input type="text" style="width: 200px; border-radius: 10px; margin-right: 15px;" name="q" class="form-control" placeholder="作品名称/作者姓名"/>
+										<span class="input-group-btn">
+										<button type="submit" style="position: absolute; top: 0; border-radius: 10px;" name="search" id="search-btn" class="btn btn-primary btn-flat">
+											<i class="fa fa-search">搜索</i>
+										</button>
+									</span>
+								</div>
+						</form>
+					</div>
+					<div class="box-body">
+						<table id="listBuy" class="display table dataTable" cellpadding="0" align="center" cellspacing="0" border="0">
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+#parse("./footer.html")
+
+<script src="/drp/js/myOrder.js"></script>

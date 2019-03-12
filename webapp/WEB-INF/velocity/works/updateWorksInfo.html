@@ -1,0 +1,88 @@
+#parse("./header.html")
+#parse("./leftmenu.html")
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+               	作品资料
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data tables</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <div class="box box-gray">
+			            <div class="box-header with-border" align="center">
+			              <h3 class="box-title" style="margin-top:5px;">作品资料</h3>
+			            </div>
+			            <!-- /.box-header -->
+			            <!-- form start -->
+			            <form class="form-horizontal">
+			              <div class="box-body">
+			              <div class="form-group">
+			                  <label for="inputRealName" class="col-sm-3 control-label col-sm-offset-1">作品名称</label>
+			                  <div class="col-sm-7">
+			                  	<input type="text" class="form-control" id="inputWorksName" placeholder="作品名称">
+			                  </div>
+			                </div>
+			                <div class="form-group">
+			                  <label for="inputWorksMemo" class="col-sm-3 control-label col-sm-offset-1">作品摘要</label>
+			                  <div class="col-sm-7">
+			                  	<textarea class="form-control" rows="3" id="inputWorksMemo" placeholder="请输入作品摘要"></textarea>
+			                  </div>
+			                </div>
+			                 <div class="form-group">
+					             <label class="col-sm-3 col-sm-offset-1" style="margin-right:15px;">是否付费</label>
+					             <select id="isFree" class="isFree">
+                                	<option name="isFree" value="1">付费</option>
+                                	<option name="isFree" value="0">免费</option>
+                           		</select>
+					             <!-- <label>
+								 <input type="radio" name="isFree" class="isFree" value="" checked />
+								    付费
+								  </label>
+								  <label>
+								  <input type="radio" name="isFree" class="isFree" value="0" />
+								    免费
+								  </label>  -->
+					        </div>
+					        <div class="form-group">
+						        <label for="inputWorksMemo" class="col-sm-3 control-label col-sm-offset-1">预估费用</label>
+						        <div class="col-sm-7">
+						            <input type="text" class="form-control" placeholder="预估费用" id="estimatedCostInput">
+						        </div>
+					        </div>
+			                <div class="form-group">
+			                  <label for="inputWorksLvl" class="col-sm-3 control-label col-sm-offset-1">作品等级</label>
+			                  <div class="col-sm-7">
+			                    <input type="text" class="form-control" id="inputWorksLvl" placeholder="作品等级">
+			                  </div>
+			                </div>
+			              </div>
+			              <!-- /.box-body -->
+			              <div class="box-footer" align="center">
+			                <button type="submit" class="btn btn-info col-sm-2 col-sm-offset-5" id="inputInformation">提交</button>
+			              </div>
+			              <!-- /.box-footer -->
+			            </form>
+			         </div>
+                    
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+
+#parse("./footer.html")
+<script src="/drp/js/updateWorksInfo.js"></script>

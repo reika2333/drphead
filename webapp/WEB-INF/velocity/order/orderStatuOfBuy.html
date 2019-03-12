@@ -1,0 +1,103 @@
+#parse("./header.html") #parse("./leftmenu.html")
+<!--
+	普通用户查看作品交易状态的页面
+  -->
+ <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+    <section class="content-header">
+      <h1>
+        交易状态
+        <small>作品购买</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+	<!--交易状态-->
+		<section class="content">
+			<div class="col-sm-10 col-sm-offset-1">
+				<ul class="timeline">
+					<!--订单-->
+					<li>
+						<i class="fa fa-pencil bg-gray" id="iOrder"></i>
+			              <div class="timeline-item row" >
+			                <span class="time" style="color: green;margin-right: 1%;" id="sOrder">已完成</span>
+			                <h3 class="timeline-header">填写订单</h3>
+			                <div class="timeline-body" style="padding-bottom: 0px;" id="orderDetails">
+			                </div>
+			                <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right" style="margin-right: 4%; margin-bottom:2%;" id="orderChange">
+			                  	  修改订单
+			                    </div>
+			                    <div class="btn btn-danger pull-right" style="margin-right:2%;" onclick="cancelOrder()" id="orderCancel">
+			                  	  取消订单
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--买家协议-->
+					<li>
+						<i class="fa fa-pencil-square-o bg-gray" id="iProtocol"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sProtocol">未完成</span>
+			                <h3 class="timeline-header">签署协议</h3>
+			                <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right" style="margin-right:4%;margin-bottom:1%;" id="protocol">
+			                  	  立即签署
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--付款-->
+					<li>
+						<i class="fa fa-money bg-gray" id="iPaied"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sPaied">未完成</span>
+			                <h3 class="timeline-header">付款</h3>
+			                <div class="timeline-footer">
+			                		<div id="paied" class="btn btn-primary pull-right disabled" style="margin-right: 4%;margin-bottom:1% ;" onclick="paied()">
+			                  	  已付款
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--卖家确认-->
+					<li>
+						<i class="fa fa-check-circle bg-gray" id="iReceive"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sReceive">未完成</span>
+			                <h3 class="timeline-header">卖家收款确认</h3>
+			                <div class="timeline-footer ">
+			                		<div class="btn btn-primary disabled pull-right" style="margin-right: 4%;margin-bottom:1% ;" id="talkWith">
+			                  	  联系卖家
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--下载-->
+					<li>
+						<i class="fa fa-download bg-gray"  id="download"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="downloadStatu">未完成</span>
+			                <h3 class="timeline-header">下载</h3>
+			                 <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right" style="margin-right: 4%; margin-bottom:2%;" onclick="downloadFile()";id="downloadFile">
+			                  	  下载文件
+			                    </div>
+			                    <div class="btn btn-primary pull-right" style="margin-right:2%;" onclick="downloadKey()" ;id="downloadkey">
+			                  	  下载密钥
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<li>
+		              <i class="fa fa-check bg-gray"></i>
+		            </li>
+				</ul>
+			</div>
+		</section>
+  </div>
+#parse("./footer.html")
+
+<script src="/drp/js/orderStatuOfBuy.js"></script>
+<script src="/drp/js/FileSaver.min.js"></script>

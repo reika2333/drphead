@@ -1,0 +1,96 @@
+#parse("./header.html")
+#parse("./leftmenu.html")
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+               	作品注册
+                <small>注册作品</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data tables</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <div class="box">
+                        <!-- /.login-logo -->
+					    <div class="login-box-body">
+					        <h3 class="login-box-msg">作 品 注 册</h3>
+
+					        <div class="form-group">
+				        		<label class="col-sm-4 control-label" for="file" >文件上传：</label>
+                  				<input type="file" id="file" name="file">
+					        </div>
+					        <div class="form-group">
+				        		<label class="col-sm-4 control-label" for="key" >密钥上传：</label>
+                  				<input type="file" id="key" name="key">
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="作品名称" id="workNameInput">
+					            <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="作品类型" id="workTypeInput" disabled>
+					            <span class="glyphicon glyphicon-folder-close form-control-feedback"></span>
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="作品格式" id="workStyleInput" disabled>
+					            <span class="glyphicon glyphicon-tags form-control-feedback"></span>
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="作品大小" id="workSizeInput" disabled>
+					            <span class="glyphicon glyphicon-text-size form-control-feedback"></span>
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="作品简介" id="workIntroductionInput">
+					            <span class="glyphicon glyphicon-file form-control-feedback"></span>
+					        </div>
+					        <div class="form-group has-feedback">
+					             <label>是否付费：</label>
+					             <label>
+								 <input type="radio" name="isFree" class="isFree" value="1" checked />
+								    付费
+								  </label>
+								  <label>
+								  <input type="radio" name="isFree" class="isFree" value="0" />
+								    免费
+								  </label>
+					        </div>
+					        <div class="form-group has-feedback">
+					            <input type="text" class="form-control" placeholder="预估费用" id="estimatedCostInput">
+					            <span class="glyphicon glyphicon-yen form-control-feedback"></span>
+					        </div>
+					        <div class="row">
+					            <!-- /.col -->
+					            <div class="col-xs-offset-4 col-xs-4">
+					                <button type="submit" class="btn btn-primary btn-block btn-flat" id="loginBtn">注册</button>
+					            </div>
+					            <!-- /.col -->
+					        </div>
+					    </div>
+                    </div>
+                    
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+     
+
+#parse("./footer.html")
+<!-- 作品注册的CSS样式 -->
+<link rel="stylesheet" href="/drp/dist/css/works/worksRegister.min.css">
+<!-- 上传作品需要用到的js文件 -->
+<script src="/drp/bower_components/jquery/dist/ajaxfileupload.js"></script>
+<script src="/drp/js/worksRegister.js"></script>

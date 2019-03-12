@@ -1,0 +1,94 @@
+#parse("./header.html") #parse("./leftmenu.html")
+<!--
+	作者查看作品交易状态的页面
+  -->
+ <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+    <section class="content-header">
+      <h1>
+        交易状态
+        <small>作品购买</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+	<!--交易状态-->
+		<section class="content">
+			<div class="col-sm-10 col-sm-offset-1">
+				<ul class="timeline">
+					<!--订单-->
+					<li>
+						<i class="fa fa-pencil bg-gray" id="iOrder"></i>
+			              <div class="timeline-item row" >
+			                <span class="time" style="color: green;margin-right: 1%;" id="sOrder">已完成</span>
+			                <h3 class="timeline-header">收到订单</h3>
+			                <div class="timeline-body" style="padding-bottom: 0px;" id="orderDetails">
+			                </div>
+			                <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right" style="margin-right: 4%; margin-bottom:2%;" id="orderChange">
+			                  	  查看订单
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--买家协议-->
+					<li>
+						<i class="fa fa-pencil-square-o bg-gray" id="iProtocol"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sProtocol">未完成</span>
+			                <h3 class="timeline-header">买家签署协议</h3>
+			                <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right" style="margin-right:4%;margin-bottom:1%;" id="protocol">
+			                  	  立即签署
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--付款-->
+					<li>
+						<i class="fa fa-money bg-gray" id="iPaied"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sPaied">未完成</span>
+			                <h3 class="timeline-header">付款</h3>
+			                <div class="timeline-footer">
+			                		<div id="talkWith" class="btn btn-primary pull-right disabled" style="margin-right: 4%;margin-bottom:1% ;" onclick="paied()">
+			                  	  联系买家
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--卖家确认-->
+					<li>
+						<i class="fa fa-check-circle bg-gray" id="iReceive"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sReceive">未完成</span>
+			                <h3 class="timeline-header">卖家收款确认</h3>
+			                <div class="timeline-footer ">
+			                		<div class="btn btn-primary disabled pull-right" style="margin-right: 4%;margin-bottom:1% ;" id="received">
+			                  	  确认收款
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--交易完成-->
+					<li>
+						<i class="fa fa-download bg-gray" id="iCompleted"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sCompleted">未完成</span>
+			                <h3 class="timeline-header">完成</h3>
+			                <div class="timeline-footer ">
+			                		<div style="color:gray;margin-left:3%;" id="completed">交易完成后买家可在购买期限内下载作品</div>
+			                </div>
+			              </div>
+					</li>
+					<li>
+		              <i class="fa fa-check bg-gray" id="over"></i>
+		            </li>
+				</ul>
+			</div>
+		</section>
+  </div>
+#parse("./footer.html")
+
+<script src="/drp/js/orderStatuOfBuyByAuthor.js"></script>

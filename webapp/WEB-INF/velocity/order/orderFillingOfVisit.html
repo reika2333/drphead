@@ -1,0 +1,111 @@
+#parse("./header.html") #parse("./leftmenu.html")
+
+<!-- 
+	邀请代理的订单填写页面
+ -->
+
+ <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+    <section class="content-header">
+      <h1 style="display: inline;">
+        填写邀请订单<small>代理邀请</small>
+      </h1>
+    </section>
+		<section class="content">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 col-xs-12">
+					<div class="box">
+						<div class="box-header with-border">
+							<h3 class="box-title" style="margin-top: 1%;margin-bottom: 1%;">填写订单</h3>
+						</div>
+						<form class="form-horizontal">
+							<div class="box-body">
+								<!--代理商编号-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">代理商编号：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksIdInput" id="agentId" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--代理商-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">代理商：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="agentNameInput" id="agentName" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品编号-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品编号：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksIdInput" id="worksIdInput" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksNameInput" id="worksNameInput" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--作品价格-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">作品价格：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="worksFeeInput" id="worksFeeInput"   style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+								<!--期限-->
+								<div class="form-group">
+									<label class="control-label col-sm-3">代理期限：</label>
+									<div class="col-sm-7">
+                    						<select class="form-control" id="agentTimeInput" style="border-radius:5px;">
+						                    <option value="1年">1年</option>
+						                    <option value="2年">2年</option>
+						                    <option value="5年">5年</option>
+						                    <option value="15年">15年</option>
+						                    <option value="30年">30年</option>
+						                 </select>
+                 					</div>
+								</div>
+								<!--收费比例-->
+								<div class="form-group">
+								    <label class="control-label col-sm-3">代理商分成：</label>
+									<div class="col-sm-7">
+                    					<select class="form-control" id="autherPatioInput" style="border-radius:5px;">
+						                    <option id="select1" value="1">1成</option>
+						                    <option id="select2" value="2">2成</option>
+						                    <option id="select3" value="3">3成</option>
+						                    <option id="select4" value="4">4成</option>
+						                    <option id="select5" value="5">5成</option>
+						                    <option id="select6" value="6">6成</option>
+						                    <option id="select7" value="7">7成</option>
+						                    <option id="select8" value="8">8成</option>
+						                    <option id="select9" value="9">9成</option>
+						                 </select>
+                 					</div>
+                 				</div>
+                 				<div class="form-group">
+									<label class="control-label col-sm-3" id="remarksContentInput">作者分成：</label>
+									<div class="col-sm-7">
+                    						<input class="form-control" name="autherPatioInput" id="agentPatioInput" value="9成" style="border-radius: 5px;" disabled="disabled">
+                 					</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<div class="btn btn-danger col-sm-offset-3 col-sm-2 col-xs-offset-3 col-xs-2">返回</div>
+								<div type="submit" class="btn btn-primary col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2" id="orderSubmitBtn">提交</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+  </div>
+
+
+
+#parse("./footer.html")
+
+<script src="/drp/js/orderFillingOfVisit.js"></script>
+
+

@@ -1,0 +1,28 @@
+.manageBtn{
+	height: 100%;
+	background-color: gray;
+	padding-top: 10px;
+}
+.worksInfo1{
+	height:41px;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.worksInfo2{
+	height:41px;
+	text-align: left;
+	margin-left: 15px;
+	padding-top: 15px;
+	border-top-style: solid;
+	border-top-color: #ddd;
+	border-top-width: thin;
+}
+.img-Info{
+	height: 90px;
+	width: auto;
+	margin-left: 25px;
+}
+.worksInfo01{
+	margin-left: 20px;
+}

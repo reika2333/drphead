@@ -1,0 +1,55 @@
+#parse("./header.html")
+#parse("./leftmenu.html")
+<html>
+<head>
+	<style>
+		.p1 {
+			color: #336699;
+			font-size:30px
+			}
+	</style>
+</head>
+<!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+               	我的作品
+                <small>作品管理</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Tables</a></li>
+                <li class="active">Data tables</li>
+            </ol>
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+					        <div class="col-xs-12" >
+					        <div  style="border-bottom:thin solid #ddd">
+					        	<span class="p1">作品简介</span>
+					        	<button class="btn pull-right btn-primary" style="margin-right: 18%" id="updateWorksInfoBtn">修改</button>
+					        </div>
+					        	<div id="showData" class=" col-sm-offset-1 col-sm-10" ></div>
+					        </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </section>
+        <!-- /.content -->
+    </div>
+</html>
+
+#parse("./footer.html")
+<script src="/drp/js/showWorksDetails.js"></script>

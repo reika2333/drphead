@@ -1,0 +1,96 @@
+#parse("./header.html") #parse("./leftmenu.html")
+<!--
+	代理商申请代理的订单状态页面 
+ -->
+ <div class="content-wrapper" style="background: url(/drp/dist/img/bg02.jpg); background-size: 100%;repeat：none;">
+    <section class="content-header">
+      <h1>
+        交易状态
+        <small>作品代理</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+	<!--交易状态-->
+		<section class="content">
+			<div class="col-sm-10 col-sm-offset-1">
+				<ul class="timeline">
+					<!--订单-->
+					<li>
+						<i class="fa fa-pencil bg-blue" id="iOrder"></i>
+			              <div class="timeline-item row" >
+			                <span class="time" style="color: green;margin-right: 1%;" id="sOrder">已完成</span>
+			                <h3 class="timeline-header">收到订单</h3>
+			
+			                <div class="timeline-body" style="padding-bottom: 0px;" id="orderDetail">
+			                  <p>作品名称：《xxxxxx》 <br />  代理时限:xxxx  <br /> 备注：xxxxxxxxxxxxxxxxxx</p>
+			                </div>
+			                <div class="timeline-footer">
+			                		
+			                    <div class="btn btn-primary pull-right" style="margin-right:2%;" id="talkWith">
+			                  	  联系代理商
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--买家协议-->
+					<li>
+						<i class="fa fa-pencil-square-o bg-gray" id="iProtocol-1"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sProtocol-1">未完成</span>
+			                <h3 class="timeline-header">代理商签署协议</h3>
+			                <div class="timeline-footer">
+			                		<a class="btn btn-primary pull-right " style="margin-right: 4%;margin-bottom:1% ;" id="Protocol-1">
+			                  	  查看协议
+			                    </a>
+			                </div>
+			              </div>
+					</li>
+					<!--卖家协议-->
+					<li>
+						<i class="fa fa-pencil-square-o bg-gray" id="iProtocol-2"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="sProtocol-2">未完成</span>
+			                <h3 class="timeline-header">签署协议</h3>
+			                <div class="timeline-footer">
+			                		<div class="btn btn-primary pull-right disabled" style="margin-right: 4%;margin-bottom:1% ;" id="protocol-2">
+			                  	  立即签署
+			                    </div>
+			                    <div class="btn btn-danger pull-right disabled" style="margin-right: 2%;margin-bottom:1% ;" id="refuse">
+			                  	  拒绝代理
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<!--完成-->
+					<li>
+						<i class="fa fa-download bg-gray" id="iSuccess"></i>
+			              <div class="timeline-item row">
+			                <span class="time" style="color: red;margin-right: 1%;" id="success">尚未达成代理协议</span>
+			                <h3 class="timeline-header">完成</h3>
+			                <div class="timeline-footer ">
+			                		<div class="btn btn-primary pull-right disabled" style="margin-right: 4%;margin-bottom:1% ;" id="cancel">
+			                  	  取消代理
+			                    </div>
+			                </div>
+			              </div>
+					</li>
+					<li>
+		              <i class="fa fa-check bg-gray" id="iCompleted"></i>
+		            </li>
+				</ul>
+			</div>
+		</section>
+  </div>
+
+
+
+
+
+
+
+#parse("./footer.html")
+
+<script src="/drp/js/orderStatuOfAgentByAuthor.js"></script>
